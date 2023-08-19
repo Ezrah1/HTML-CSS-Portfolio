@@ -1,0 +1,229 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+
+    font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.5s; 
+  }
+  
+  /* Navigation bar */
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 100;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+  
+  #fcc-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  #navbar ul li {
+    margin-left: 20px;
+  }
+  
+  #navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Welcome section */
+  #welcome-section {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #3498db, #e74c3c);
+    color: white;
+    text-align: center;
+  }
+  #intro {
+    
+    padding:20px 70px 20px 70px; 
+    border: none; 
+    border-radius: 50%;
+  }
+
+  /* Contact button */
+.contact-button,
+.resume-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-button a {
+    text-decoration: none;
+    color: white;
+  }
+
+.contact-button:hover,
+.resume-link:hover {
+  background-color: #444;
+}
+
+
+  /* Skills section */
+  #skills {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+  }
+  
+  #skills h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Projects section */
+  #projects {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    flex: 1;
+    transition: transform 0.3s;
+    background-color: #f9f9f9;
+  }
+  
+  .project:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Education section */
+  #education {
+    padding:40px 120px 40px 120px; 
+    background-color: #f0f0f0;
+  }
+  
+  /* Contact section */
+  #contact-form {
+    padding: 40px;
+    background-color: #333;
+    color: white;
+  }
+  
+  #contact-form li{
+    list-style-type: none;
+  }
+  #contact-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+
+  /*meadia*/
+  @media (max-width: 768px) {
+    /* Navigation bar */
+    #navbar {
+
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+    .logo-1{
+        opacity: 1;
+    }
+     #navbar ul {
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: 10%;
+        padding-top: 8px; 
+        transition: transform 0.3s;
+        text-size-adjust: auto;
+    }
+    #navbar ul.show {
+        transform: translateX(0); /* Show when the "show" class is applied */
+      }
+    
+  
+    #navbar ul li {
+      margin-left: 0;
+      margin-bottom: 10px 0;
+    }
+    #navbar ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        transition: background-color 0.3s;
+      }
+    
+      #navbar ul li a:hover {
+        background-color: #444;
+      }
+
+      #welcome-section{
+        padding-top: 50px;
+      }
+    /* Contact button */
+    .contact-button {
+      display: block;
+      margin: 10px auto;
+    }
+  
+    /* Resume link */
+    .resume-link {
+      display: block;
+      margin: 10px auto;
+    }
+    #education {
+        background-color: #f9f9f9;
+        padding: 20px; 
+    }
+  }
+  
